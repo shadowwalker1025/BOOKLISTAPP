@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookList App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+            BookList App
+        </h1>
+        <form autocomplete='off' id="book-form">
+            <div class="form-group">
+                <input type="text" id="title" class="form-control" placeholder="Title">
+            </div>
+            <div class="form-group">
+                <input type="text" id="author" class="form-control" placeholder="Author">
+            </div>
+            <div class="form-group">
+                <input type="text" id="isbn" class="form-control" placeholder="isbn">
+            </div>
+            <input type="submit" value="Add Book" class="btn btn-primary btn-block">
+        </form>
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <td>Title</td>
+                    <td>Author</td>
+                    <td>ISBN</td>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+</body>
+<script src="booklist.js"></script>
+</html>
